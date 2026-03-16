@@ -1,14 +1,13 @@
 
-const CACHE_NAME = "sap-estimator-v1";
+const CACHE_NAME = "sap-estimator-cache-v1";
+const urlsToCache = [
+  "./",
+  "./index.html"
+];
 
 self.addEventListener("install", event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
-      return cache.addAll([
-        "./",
-        "./index.html"
-      ]);
-    })
+    caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
   );
 });
 

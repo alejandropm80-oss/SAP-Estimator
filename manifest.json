@@ -1,8 +1,9 @@
 {
-  "name": "SAP RISE Estimator",
+  "name": "SAP Activate Estimator",
   "short_name": "SAP Estimator",
-  "start_url": "index.html",
+  "start_url": "./index.html",
   "display": "standalone",
+  "orientation": "any",
   "background_color": "#0B1623",
   "theme_color": "#0057B8",
   "icons": [
@@ -14,6 +15,11 @@
     {
       "src": "icons/icon-512.png",
       "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-1024.png",
+      "sizes": "1024x1024",
       "type": "image/png"
     }
   ]
